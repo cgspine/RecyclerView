@@ -1,0 +1,5 @@
+<resources>
+	<string name="app_name">R</string>
+	<string name="navgation_drawer_toggler_open">打开</string>
+	<string name="navgation_drawer_toggler_close">关闭</string>
+</resources>

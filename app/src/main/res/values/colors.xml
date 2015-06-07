@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="navigation_drawer_bg">#ccc</color>
+	<color name="app_bg">#ccc</color>
+	<color name="item_bg_normal">#fff</color>
+	<color name="item_bg_active">#eee</color>
+</resources>
