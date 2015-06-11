@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements NavigationDrawerF
 			case 1:
 				startFragment(new MutiItemRecyclerViewFragment());
 				break;
-			case 3:
+			case 2:
 				startFragment(new PagerRecyclerViewFragment());
 				break;
 			default:

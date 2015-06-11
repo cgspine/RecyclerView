@@ -22,7 +22,7 @@ public class SpaceItemDecorator extends RecyclerView.ItemDecoration {
 	}
 
 	/**
-	 *  同时设置四个方向的inset
+	 *
 	 * @param insets
 	 */
 	public void setInsets(int insets){
@@ -30,7 +30,7 @@ public class SpaceItemDecorator extends RecyclerView.ItemDecoration {
 	}
 
 	/**
-	 * 设置四个方向的inset
+	 *
 	 * @param insetLeft
 	 * @param insetTop
 	 * @param insetRight
@@ -45,6 +45,11 @@ public class SpaceItemDecorator extends RecyclerView.ItemDecoration {
 
 	@Override
 	public void getItemOffsets(Rect outRect, View view, RecyclerView parent, RecyclerView.State state) {
-		outRect.set(mInsetLeft,mInsetTop,mInsetRight,mInsetBottom);
+        if(parent.getChildAdapterPosition(view)%2==0){
+            outRect.set(mInsetLeft*3,mInsetTop*3,mInsetRight*3,mInsetBottom*3);
+        }else{
+            outRect.set(mInsetLeft,mInsetTop,mInsetRight,mInsetBottom);
+        }
+
 	}
 }

@@ -89,7 +89,6 @@ public class NavigationDrawerFragment extends Fragment {
 				new String[]{
 						"简单列表",
 						"多item类型列表",
-						"按页滑动列表"
 				}
 		));
 		mListView.setItemChecked(mCurrentSelectedPosition, true);
