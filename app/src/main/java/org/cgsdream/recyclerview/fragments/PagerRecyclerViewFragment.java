@@ -18,6 +18,7 @@ import org.cgsdream.recyclerview.R;
 import org.cgsdream.recyclerview.adapters.SimpleAdapter;
 import org.cgsdream.recyclerview.data.Data;
 import org.cgsdream.recyclerview.decorator.SpaceItemDecorator;
+import org.cgsdream.recyclerview.layoutManager.PagerLayoutManager;
 
 import java.util.List;
 
@@ -41,8 +42,8 @@ public class PagerRecyclerViewFragment extends Fragment implements View.OnClickL
         mAdapter = new SimpleAdapter(dataList);
         mRecyclerView.setAdapter(mAdapter);
         //layout manager
-        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
-        layoutManager.setOrientation(LinearLayoutManager.VERTICAL);
+        PagerLayoutManager layoutManager = new PagerLayoutManager(getActivity());
+        layoutManager.setOrientation(PagerLayoutManager.Orientation.VERTICAL);
         mRecyclerView.setLayoutManager(layoutManager);
 
         //itemDecorator
